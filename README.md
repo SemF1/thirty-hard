@@ -97,7 +97,6 @@ cd thirty-hard
 
 Install backend packages:
 
-cd server
 
 npm install
 
@@ -140,10 +139,8 @@ This will generate five pre-configured demo players (Victor, Connor, Mia, Leo, a
 
 4. Run the Backend
 
-cd server
 
-npm start
-
+npm run dev
 
 This runs the Express API on http://localhost:5000
 
