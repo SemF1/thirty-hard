@@ -90,15 +90,22 @@ This lets you see who’s ahead and who’s catching up — creating a fun sense
 
 ### 1. Clone the Repository
 git clone https://github.com/yourusername/thirty-hard.git
-cd thirty-
+
+cd thirty-hard
 
 2. Install Dependencies
+
 Install backend packages:
+
 cd server
+
 npm install
 
+
 Install frontend packages:
+
 cd ../client
+
 npm install
 
 3. Setup Environment Variables
@@ -106,10 +113,14 @@ npm install
 Create a .env file inside the /server directory:
 
 MONGO_URI=your_mongodb_connection_string
+
 OPENAI_API_KEY=your_openai_api_key
+
 PORT=5000
 
+
 Note for graders:
+
 If you don’t have your own MongoDB or OpenAI keys, the app will still run.
 You can simply start the server and use the built-in dummy data (next step).
 The motivational quote feature will show a fallback message if no API key is provided.
@@ -128,14 +139,19 @@ curl -X POST http://localhost:5000/api/progress/seed-dummies
 This will generate five pre-configured demo players (Victor, Connor, Mia, Leo, and Aria) with different progress states for testing and grading.
 
 4. Run the Backend
+
 cd server
+
 npm start
 
 
 This runs the Express API on http://localhost:5000
 
+
 5. Run the Frontend
+
 cd ../client
+
 npm run dev
 
 
